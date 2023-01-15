@@ -1,0 +1,96 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage[macedonian]{babel}
+\usepackage{todonotes}
+\usepackage{appendix}
+\usepackage{lettrine}
+\usepackage{multirow}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage{pgfplots}
+\graphicspath{ {./images/} }
+\usepackage[
+    backend=biber,
+    style=numeric,
+    babel=other,
+]{biblatex}
+\DeclareLanguageMapping{macedonian}{macedonian}
+\addbibresource{citations.bib}
+
+\title{Вашиот наслов овде}
+\author{Име Презиме}
+\date{Јуни 2022}
+
+\begin{document}
+\makeatletter
+\begin{titlepage}
+\noindent
+\includegraphics[width=0.15\textwidth]{images/logos/ukim.png}
+\begin{minipage}[b]{0.7\textwidth}
+\centering
+Универзитет „Св. Кирил и Методиј“ во Скопје \\
+Факултет за информатички науки и компјутерско инженерство
+\end{minipage}%
+\includegraphics[width=0.15\textwidth]{images/logos/fcse.png}
+\begin{center}
+\\[15ex]
+\Large \bfseries ДИПЛОМСКА РАБОТА
+
+\small на тема \\[10ex]
+
+{\huge \bfseries  \@title }\\[25ex]
+\end{center}
+\noindent
+\begin{minipage}[t]{.45\textwidth}
+\raggedright
+Кандидат: \\
+\@author\ \textit{186063}
+email@students.finki.ukim.mk
+\end{minipage}
+\hfill
+\noindent
+\begin{minipage}[t]{.45\textwidth}
+\raggedleft
+Ментор: \\
+проф. д-р \\ Име Презиме
+ime.prezime@finki.ukim.mk
+\end{minipage}
+            
+                \mbox{}
+                \vfill
+            \begin{center}
+                {\large Скопје, \@date}
+            \end{center}
+\end{titlepage}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section*{Апстракт}
+
+\chapter{Глава 1}
+\label{ch:glava1}
+
+\section{Секција 1}
+
+\section{Секција 2}
+
+\section{Секција 3}
+
+\section{Секција 4}
+
+\printbibliography
+
+\begin{appendices}
+
+\chapter{Прилог 1}
+
+\end{appendices}
+\end{document}
